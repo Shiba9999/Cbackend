@@ -7,8 +7,6 @@ app.use(cors());//to handle cors error
 app.use(express.json());//This middleware parses JSON in the request body
 const port = process.env.PORT || 3000;
 
-
-
 app.post('/contact', (req, res) => {
     const { email, subject, message } = req.body;
     console.log('Received data:', { email, subject, message });
